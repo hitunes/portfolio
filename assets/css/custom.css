@@ -1,6 +1,5 @@
 body{
 	background-color: #EEE;
-
 }
 /* CONTAINER */
 .container{
@@ -14,7 +13,7 @@ body{
 }
 header {
 	position:sticky;
-	top:0;
+	top:0%;
 	left:0;
 	height:110px;
 	width:100%;
@@ -44,6 +43,8 @@ font-weight: 700;
 /* Header */
 nav{
 	background-color: #FFF;
+	margin-top: 5px;
+
 }
 nav ul{
 	list-style-type: none;
@@ -59,7 +60,6 @@ nav ul{
 }
 .nav__brand img{
 	height: 80px;
-	/* padding-top: 10px; */
 }
 .nav__left{
 	float: left;
