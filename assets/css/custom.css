@@ -1,5 +1,6 @@
 body{
 	background-color: #EEE;
+
 }
 /* CONTAINER */
 .container{
@@ -11,13 +12,25 @@ body{
 .container-lg-width{
 	max-width: 1060px;
 }
+header {
+	position:sticky;
+	top:0;
+	left:0;
+	height:110px;
+	width:100%;
+	z-index:1;
+	opacity: 0.9;
+}
+header > nav > div{
+	position:relative;
+}
 /* general styles */
 .clearfix:after{
 	content: "";
 	display: table;
 	clear: both;
 }
-section.project, section.job{
+.project, .job{
 	padding: 60px 0;
 }
 .section-heading__title{
@@ -36,6 +49,7 @@ nav ul{
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+
 }
 .nav__list li{
 	display: inline-block;
@@ -74,6 +88,7 @@ nav ul{
 	height: 300px;
 	background: url(../../assets/img/bg.jpg);
 	padding-top: 119px;
+	position: relative;
 
 }
 .banner__details{
