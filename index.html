@@ -1,85 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-</div>
-<header>
-          <!-- header contents -->
-      <nav>
-          <ul>
-              <li>
-                  <a href="index.html">
-                      <img src="icon.jpeg" width="80px">
-                  </a>
-              </li>
-              <li>
-                  <ul>
-                      <li>
-                          <a href="index.html">HOME</a> 
-                      </li>
-                      <li>About</li>
-                  </ul>
-              </li>
-                  </ul>
-      </nav>
-  </header>
-  <main>
-      <!-- banner section -->
-      <section>
-          <div>
-              <h1>Portfolio</h1>
-          </div>
-      </section>
-      <!-- project section -->
-      <section>
-          <!--  GRID SYSTEM AT WORK HERE-->
-          <div>
-              <div class="cards">CARD 1</div>
-              <div class="cards">CARD 2</div>
-              <div class="cards">CARD 3</div><br>
-              <div class="cards">CARD 4</div>
-              <div class="cards">CARD 5</div>
-              <div class="cards">CARD 6</div>
-          </div>
-          <!-- GRID SYSTEM ENDS HERE -->
-      </section>
-      <!-- form section -->
-      <section>
-          <form>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-              <button>Submit</button>
-          </form>
-      </section>
-      <!-- CV section -->
-      <aside>
 
-      </aside>
-  </main>
-<footer>
-  <div>
-      <ul>
-          <li>Copyright &copy; &bull; Debuggz 2018</li>
-          <li>
-              <ul>
-                  <li>Contact</li>
-                  <li>
-                      <ul>
-                          <li><a href="http://www.github.com/hitunes">GitHub</a></li>
-                          <li><a href="http://www.linkedin.com/adekoya itunu">LinkedIn</a></li>
-                          <li><a href="#"> E-mail</a></li>
-                      </ul>
-                  </li>
-              </ul>
-          </li>
-      </ul>
-  </div>
-</footer>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>portfolio page</title>
+	<link rel="stylesheet" href="assets/css/debugzgrid.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+	</div>
+	<header>
+		<!-- header contents -->
+		<nav>
+			<div class="container">
+					<ul class="nav__list">
+							<li class="nav__left">
+								<a href="index.html"><img src="assets/img/mylogo.png" width="100px">
+								</a>
+							</li>
+							<li class="nav__right">
+								<ul>
+									<li class="nav__active">
+										<a class="nav__link" href="index.html">HOME</a>
+									</li>
+									<li><a href="#" class="nav__link" >ABOUT</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+			</div>
+			
+		</nav>
+	</header>
+	<main>
+		<!-- banner section -->
+		<section class="banner">
+			<div class="banner__details">
+				<h1>Portfolio</h1>
+			</div>
+		</section>
+		<!-- project section -->
+		<section class="project">
+			<div class="container">
+					<div class="grid">
+							<div class="col-4 col-x-12">
+								<div class="card">
+									<div class="card__body">
+										<div class="card__overlay">
+											<div class="card__icons">A</div>
+											<a href="#" class="card__links">Visit Project</a>
+										</div>
+										<img src="http://via.placeholder.com/400x250" alt="placeholder">
+									</div>
+									<div class="card__footer">
+										<h6>Title</h6>
+										<small>Date</small>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 col-x-12">	<div class="card">
+									<div class="card__body">
+										<img src="http://via.placeholder.com/400x250" alt="placeholder">
+									</div>
+									<div class="card__footer">
+										<h6>Title</h6>
+										<small>Date</small>
+									</div>
+								</div></div>
+							<div class="col-4 col-x-12">	<div class="card">
+									<div class="card__body">
+										<img src="http://via.placeholder.com/400x250" alt="placeholder">
+									</div>
+									<div class="card__footer">
+										<h6>Title</h6>
+										<small>Date</small>
+									</div>
+								</div></div>
+							<div class="col-4 col-x-12">	<div class="card">
+									<div class="card__body">
+										<img src="http://via.placeholder.com/400x250" alt="placeholder">
+									</div>
+									<div class="card__footer">
+										<h6>Title</h6>
+										<small>Date</small>
+									</div>
+								</div></div>
+							<div class="col-4 col-x-12">	<div class="card">
+									<div class="card__body">
+										<img src="http://via.placeholder.com/400x250" alt="placeholder">
+									</div>
+									<div class="card__footer">
+										<h6>Title</h6>
+										<small>Date</small>
+									</div>
+								</div></div>
+							<div class="col-4 col-x-12">	<div class="card">
+									<div class="card__body">
+										<img src="http://via.placeholder.com/400x250" alt="placeholder">
+									</div>
+									<div class="card__footer">
+										<h6>Title</h6>
+										<small>Date</small>
+									</div>
+								</div></div>
+						</div>
+			</div>			
+			<!-- GRID SYSTEM ENDS HERE -->
+		</section>
+		<!-- form section -->
+		<section>
+			<form>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<button>Submit</button>
+			</form>
+		</section>
+		<!-- CV section -->
+		<aside>
+
+		</aside>
+	</main>
+	<footer>
+		<div>
+			<ul>
+				<li>Copyright &copy; &bull; Debuggz 2018</li>
+				<li>
+					<ul>
+						<li>Contact</li>
+						<li>
+							<ul>
+								<li>
+									<a href="http://www.github.com/hitunes">GitHub</a>
+								</li>
+								<li>
+									<a href="http://www.linkedin.com/adekoya itunu">LinkedIn</a>
+								</li>
+								<li>
+									<a href="#"> E-mail</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</footer>
 </body>
+
 </html>
 </body>
+
 </html>

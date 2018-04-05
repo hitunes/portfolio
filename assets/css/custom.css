@@ -1,0 +1,109 @@
+body{
+	background-color: #EEE;
+}
+/* CONTAINER */
+.container{
+	/* margin: 0 auto; */
+	/* max-width: 800px;
+	background: rgb(233, 227, 227); */
+	padding: 0 15px;
+}
+/* Header */
+nav{
+	background-color: #FFF;
+}
+nav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.nav__list li{
+	display: inline-block;
+}
+.nav__left{
+	float: left;
+}
+.nav__right{
+	float: right;
+}
+nav ul:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.nav__right .nav__link{
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 43px 12px;
+}
+.nav__active .nav__link{
+	background: rgb(8, 175, 175);
+}
+/* header ends */
+
+/* banner */
+.banner{
+	height: 300px;
+	background: url(../../assets/img/bg.jpg);
+	padding-top: 119px;
+}
+.banner__details{
+	padding: 15px;
+}
+.banner__details h1{
+	margin: 0;
+	text-align: center;
+	color: white;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 32px;
+}
+/* banner */
+/* project */
+.project{
+	padding: 60px 0;
+}
+.project .container{
+	max-width: 1060px;
+	margin: 0 auto;
+}
+/* project */
+/* cards */
+.card{
+	background: #fff;
+	min-height: 120px;
+	margin-bottom: 30px;
+	
+}
+.card__body{
+	height: 180px;
+	position: relative;
+}
+.card__body img{
+	width: 100%;
+	height: 100%;
+}
+.card__footer{
+	padding: 15px;
+}
+.card__footer h6{
+	margin: 5px 0;
+}
+.card__overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255,0,0,0.75);
+	transition: all 1s ease;
+	
+}
+.card__overlay:hover{
+	/* transform: scale(1); */
+	background: rgba(82, 82, 82, 0.75);
+}
+/* cards */
