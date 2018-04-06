@@ -147,18 +147,6 @@ nav ul{
     padding: 10px;
 }
 
-@media screen and (max-width: 1260px) {
-    .back {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 840px) {
-    .back {
-        width: 100%;
-    }
-}
-
 .button_base {
     margin: 0;
     border: 0;
