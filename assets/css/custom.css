@@ -213,12 +213,12 @@ body>main>section.banner>div>img:nth-child(3) {
 }
 
 .banner__details h1 {
-    padding: 250px 20px 0 20px;
-    text-align: center;
+    padding: 150px 20px 0 20px;
+    text-align: left;
     color: #010338;
     font-weight: 900;
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 90px;
+    line-height: 100px;
     letter-spacing: 10px;
 }
 
