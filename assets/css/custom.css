@@ -609,7 +609,7 @@ aside.cv {
         color: #010338;
         font-weight: 900;
         font-size: 26px;
-        padding-top: 265px;
+        padding-top: 105px;
 		line-height: 67px;
     letter-spacing: 6px;
     }
@@ -622,6 +622,7 @@ aside.cv {
         left: 50%;
     }
     .demo a {
+        display: none;
         padding-top: 1500px;
         position: absolute;
         left: 22%;
