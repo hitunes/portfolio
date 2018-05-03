@@ -608,8 +608,10 @@ aside.cv {
         text-align: center;
         color: #010338;
         font-weight: 900;
-        font-size: 30px;
-        padding-top: 300px;
+        font-size: 26px;
+        padding-top: 265px;
+		line-height: 67px;
+    letter-spacing: 6px;
     }
     #job>div>form>div.button_base.b07_3d_double_roll {
         margin-left: -30px;
