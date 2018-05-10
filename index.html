@@ -32,11 +32,8 @@
 							</li>
 							<li class="nav__right">
 								<ul>
-									<li class="nav__active">
-										<a class="nav__link" href="index.html">HOME</a>
-									</li>
 									<li>
-										<a href="#" class="nav__link">ABOUT</a>
+										<a href="#" class="nav__link toggler">CV</a>
 									</li>
 								</ul>
 							</li>
@@ -53,13 +50,17 @@
 		<section class="project">
 			<div class="container container-lg-width">
 				<div class="section-heading">
-					<h3 class="section-heading__title" id="folio">My Work</h3><br>
+					<h3 class="section-heading__title" id="folio">My Work</h3>
+					<br>
 					<div id="toggle-btn">
-							<span></span>
-							<span></span>
-							<span></span>
-							</div>
-					<p  class="section-heading__p">A collection of my past and current work. Some personal, some for clients, and some a collaboration with awesome people and agencies. Want to see more examples? <a href="mailto:hitunes247@gmail.com?subject=I%20Want%20to%20Work%20With%20You%21&body=Tell%20me%20about%20your%20project">Email me</a></p>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<p class="section-heading__p">A collection of my past and current work. Some personal, some for clients, and some a collaboration with awesome people
+						and agencies. Want to see more examples?
+						<a href="mailto:hitunes247@gmail.com?subject=I%20Want%20to%20Work%20With%20You%21&body=Tell%20me%20about%20your%20project">Email me</a>
+					</p>
 				</div>
 				<div class="grid">
 					<div class="col-4 col-x-12">
@@ -173,24 +174,37 @@
 			<div class="container container-lg-width">
 				<div class="section-heading">
 					<h3 class="section-heading__title">WANT TO DISCUSS YOUR NEW PROJECT?</h3>
-					<p  class="section-heading__p">I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about it.</p>
+					<p class="section-heading__p">I'm currently accepting new projects and would love to hear about yours. Please take a few minutes to tell me about
+						it.</p>
 				</div>
-				<!-- <form class="job__form">
+				<div class="success">
+<div class="success__message">
+<p>Form submitted Successfully!</p>
+</div>
+				</div>
+				<form class="job__form">
+					<div class="loader">
+						<div class="spinner" >
+
+						</div>
+					</div>
 					<div>
-						<textarea class="job__textarea"></textarea>
-					</div> -->
+						<input type="text" class="form__input" name="name" placeholder="Your Name" required></input>
+					</div>
 					<br>
-					<li class="button_base">
-							<a href="mailto:hitunes247@gmail.com" class="footer__links">
-									<div class="button_base b07_3d_double_roll"> 
-											<div>LETS TALK</div>
-											<div>LETS TALK</div>
-											<div>LETS TALK</div>
-											<div>LETS TALK</div>
-										</div>
-							</a>
-						</li>
-					
+					<br>
+					<div>
+						<textarea class="job__textarea" placeholder="Your Message" required></textarea>
+					</div>
+					<br>
+					<button class="hide-btn" hidden>submit</button>
+					<div class="button_base b07_3d_double_roll">
+						<div>LETS TALK</div>
+						<div>LETS TALK</div>
+						<div>LETS TALK</div>
+						<div>LETS TALK</div>
+					</div>
+
 			</div>
 			</form>
 			</div>
@@ -200,6 +214,7 @@
 			<section>
 				<div class="container">
 					<div class="aside">
+						<button class="toggler">X</button>
 						<div class="content__pp"></div>
 						<div class="aside__content">
 							<div class="content__about">About</div>
@@ -343,6 +358,17 @@
 </body>
 
 </html>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+<script src="assets/js/main.js">
+
+</script>
+
+<script>
+	app.submitToFirebase();
+	app.showResume();
+</script>
+
 </body>
 
 </html>
