@@ -284,6 +284,7 @@ div.skills > table > tbody > tr> td > h5 {
         height: 150px;
     }
     .content__exp {
+        display: none;
         height: 130px;
     }
     .content__skills {
@@ -376,6 +377,7 @@ div.skills > table > tbody > tr> td > h5 {
         left: 20%;
     }
     .environment {
+        display: none;
         top: 58%;
         width: 300px;
         left: 14%;
