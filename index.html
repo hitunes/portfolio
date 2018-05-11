@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>portfolio page</title>
 	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/debugzgrid.css">
 	<link rel="stylesheet" href="assets/css/custom.css">
 	<link rel="stylesheet" href="assets/css/cv.css">
@@ -16,34 +17,22 @@
 <body>
 	<section id="portfolio" class="demo">
 		<a href="#folio">
-			<span></span>Learn more about what I do</a>
+			<span></span></a>
 	</section>
 	<main>
 		<!-- banner section -->
 		<section class="banner">
 			<header>
 				<nav>
-					<div class="container">
-						<ul class="nav__list">
-							<li class="nav__left">
-								<a href="index.html" class="nav__link nav__brand">
-									<img src="assets/img/mylogo.png">
-								</a>
-							</li>
-							<li class="nav__right">
-								<ul>
-									<li>
-										<a href="#" class="nav__link toggler">CV</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-
-				</nav>
+						<ul class="nav__right">
+								<li>
+									<a href="#" class="nav__link toggler">CV</a>
+								</li>
+							</ul>
+						</nav>
 			</header>
 			<div class="banner__details">
-				<h1>Hi, I'm ITUNU. I design and develop experiences that make people's lives simple.</h1>
+				<h1 class="type-it"></h1>
 			</div>
 		</section>
 		<!-- project section -->
@@ -183,13 +172,13 @@
 </div>
 				</div>
 				<form class="job__form">
-					<div class="loader">
-						<div class="spinner" >
-
-						</div>
-					</div>
+								<!-- Loading 4 don't work on firefox because of the border-radius and the "dashed" style. -->
+								<div class="load-4">
+										<div class="line"></div>
+								</div>
 					<div>
-						<input type="text" class="form__input" name="name" placeholder="Your Name" required></input>
+						<input type="text" class="form__input-a" name="name" placeholder="Your Name" required></input>
+						<input type="email" class="form__input-b" name="email" placeholder="Your Email" required></input>
 					</div>
 					<br>
 					<br>
@@ -214,7 +203,7 @@
 			<section>
 				<div class="container">
 					<div class="aside">
-						<button class="toggler">X</button>
+						<!-- <button class="toggler">X</button> -->
 						<div class="content__pp"></div>
 						<div class="aside__content">
 							<div class="content__about">About</div>
@@ -275,50 +264,13 @@
 							<br> March 2018- Present</p>
 					</div>
 					<div class="skills">
-						<table>
-							<tr>
-								<th>
-									<img src="assets/img/monitor.png" alt="">
-								</th>
-								<td>Responsive Web Design</td>
-							</tr>
-							<tr>
-								<th>
-									<img src="assets/img/cmd.png" alt="">
-								</th>
-								<td>Command Line/Terminal</td>
-							</tr>
-							<tr>
-								<th>
-									<img src="assets/img/xampp.png" alt="">
-								</th>
-								<td>Wammp/Xampp</td>
-							</tr>
-							<tr>
-								<th>
-									<img src="assets/img/wire.png" alt="">
-								</th>
-								<td>Wireframing</td>
-							</tr>
-							<tr>
-								<th>
-									<img src="assets/img/joomla.png" alt="">
-								</th>
-								<td>Joomla</td>
-							</tr>
-							<tr>
-								<th>
-									<img src="assets/img/github.png" alt="">
-								</th>
-								<td>Github</td>
-							</tr>
-							<tr>
-								<th>
-									<img src="assets/img/pagelay.png" alt="">
-								</th>
-								<td>Page Layout</td>
-							</tr>
-						</table>
+							<span>HTML5</span><br>
+							<span>CSS3</span><br>
+							<span >SaaS</span><br>
+							<span>JS</span> <span>CMD</span><br>
+							<span>CSS/JS Frameworks</span><br>
+							<span>GIT</span>
+							<span>Responsive Design</span>
 					</div>
 				</div>
 			</section>
@@ -329,44 +281,43 @@
 		<div class="container container-lg-width">
 			<div class="footer__wrap">
 				<ul class="footer__list clearfix">
-					<li class="footer__left">Copyright &copy; &bull; Debuggz 2018</li>
 					<li class="footer__right">
-						<ul class="footer__list">
-							<li>Contact</li> |
-							<li>
-								<ul class="footer__list">
-									<li>
-										<a href="http://www.github.com/hitunes" target="_blank" class="footer__links">GitHub</a>
-									</li>
-									<li>
-										<a href="http://www.linkedin.com/adekoya itunu" target="_blank" class="footer__links">LinkedIn</a>
-									</li>
-									<li>
-										<a href="http://www.twitter.com/_hitunes" target="_blank" class="footer__links">Twitter</a>
-									</li>
-									<li>
-										<a href="mailto:hitunes247@gmail.com" class="footer__links">E-mail</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
+						<p>&copy; Itunu Adekoya | 2018</p>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</footer>
+
+
 </body>
 
 </html>
 <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
-<script src="assets/js/main.js">
-
-</script>
-
+<script src="assets/plugins/jquery.min.js"></script>
+<script src="assets/js/typed.min.js"></script>
+<script src="assets/js/typeit.min.js"></script>
+<script src="assets/js/main.js"></script>
 <script>
-	app.submitToFirebase();
+	new TypeIt('.type-it', {
+		
+		strings: "Hi, I'm ITUNU. I design and develop experiences that make people's lives simple.",
+		speed: 100,
+		// breakLines: false,
+    autoStart: false
+});
+</script>
+<script>
+	document.onreadystatechange = function(){
+		if (document.readyState === 'complete'){
+			app.submitToFirebase();
 	app.showResume();
+	// app.apiController();
+		}
+
+	}
+	
 </script>
 
 </body>
