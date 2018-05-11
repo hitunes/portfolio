@@ -280,6 +280,7 @@ div.skills > table > tbody > tr> td > h5 {
         border-top: 4px solid #f39554;
     }
     .content__edu {
+        display: none;
         height: 150px;
     }
     .content__exp {
@@ -359,7 +360,7 @@ div.skills > table > tbody > tr> td > h5 {
         -webkit-font-smoothing: antialiased;
         display: block;
         position: absolute;
-        top: 34.3%;
+        top: 43.3%;
         left: 20%;
     }
     .education,
@@ -370,11 +371,12 @@ div.skills > table > tbody > tr> td > h5 {
         
     }
     .education {
+        display: none;
         top: 45%;
         left: 20%;
     }
     .environment {
-        top: 66%;
+        top: 58%;
         width: 300px;
         left: 14%;
     }
@@ -382,7 +384,7 @@ div.skills > table > tbody > tr> td > h5 {
         position: absolute;
         padding: 0;
         width: 70%;
-        top: 84%;
+        top: 80%;
         left: 37%;
     }
     .education__head {
