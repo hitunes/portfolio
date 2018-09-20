@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="assets/img/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Itunu||Adekoya</title>
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,15 +23,6 @@
     <main>
         <!-- banner section -->
         <section class="banner">
-            <header>
-                <nav>
-                    <ul class="nav__right">
-                        <!-- <li>
-									<a href="#" class="nav__link toggler">CV</a>
-								</li> -->
-                    </ul>
-                </nav>
-            </header>
             <div class="banner__details">
                 <h1 class="type-it"></h1>
             </div>
@@ -47,7 +39,7 @@
                         <span></span>
                     </div>
                     <p class="section-heading__p">A collection of my past and current work. Some personal, some for clients, and some a collaboration with awesome people and agencies. Want to see more examples?
-                        <a href="mailto:hitunes247@gmail.com?subject=I%20Want%20to%20Work%20With%20You%21&body=Tell%20me%20about%20your%20project">Email me</a>
+                        <a href="mailto:hitunes247@gmail.com?subject=I%20Want%20to%20Work%20With%20You%21&body=Tell%20me%20about%20your%20project" style="color:#f39554">Email me</a>
                     </p>
                 </div>
                 <div class="grid">
@@ -57,7 +49,7 @@
                                 <div class="card__overlay">
                                     <div class="card__overlay-details">
                                         <div class="card__icons">&sect;</div>
-                                        <a href="https://bonazawin.herokuapp.com/" class="card__links" target="_blank">Visit Project</a>
+                                        <a href="https://trends.eventbree.com/" class="card__links" target="_blank">Visit Project</a>
                                     </div>
                                 </div>
                                 <img src="assets/img/card.png" alt="placeholder">
@@ -74,7 +66,7 @@
                                 <div class="card__overlay">
                                     <div class="card__overlay-details">
                                         <div class="card__icons">&sect;</div>
-                                        <a href="https://itunu-recipeapp.herokuapp.com/" class="card__links" target="_blank">Visit Project</a>
+                                        <a href="https://bonazawin.herokuapp.com/" class="card__links" target="_blank">Visit Project</a>
                                     </div>
                                 </div>
                                 <img src="assets/img/card2.png" alt="placeholder">
@@ -108,7 +100,7 @@
                                 <div class="card__overlay">
                                     <div class="card__overlay-details">
                                         <div class="card__icons">&ZHcy;</div>
-                                        <a href="https://hitunes.github.io/screen3" class="card__links" target="_blank">Visit Project</a>
+                                        <a href="https://corporate.eventbree.com/" class="card__links" target="_blank">Visit Project</a>
                                     </div>
                                 </div>
                                 <img src="assets/img/houston.jpg" alt="placeholder">
@@ -295,6 +287,8 @@
 <script src="assets/plugins/jquery.min.js"></script>
 <script src="assets/js/typed.min.js"></script>
 <script src="assets/js/typeit.min.js"></script>
+<script src="assets/js/three.js"></script>
+<script src="assets/js/AnaglyphEffect.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
     new TypeIt('.type-it', {
@@ -310,6 +304,7 @@
         if (document.readyState === 'complete') {
             app.submitToFirebase();
             app.showResume();
+            app.visualController();
             // app.apiController();
         }
 

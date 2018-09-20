@@ -86,48 +86,113 @@ var app = {
       //   });
       // });
     }
+  },
+  visualController: function() {
+    var container = document.getElementsByClassName("banner__details")[0];
+    var camera, scene, renderer, effect;
+    var mesh, lightMesh, geometry;
+    var spheres = [];
+    var directionalLight, pointLight;
+    var mouseX = 0;
+    var mouseY = 0;
+    var windowHalfX = window.innerWidth / 2;
+    var windowHalfY = window.innerHeight / 2;
+
+    document.addEventListener("mousemove", onDocumentMouseMove, false);
+
+    init();
+    animate();
+
+    function init() {
+      camera = new THREE.PerspectiveCamera(
+        60,
+        container.clientWidth / container.clientHeight,
+        0.01,
+        100
+      );
+      camera.position.z = 3;
+      camera.focalLength = 3;
+
+      var path = "assets/images/";
+      var format = ".png";
+      var urls = [
+        path + "px" + format,
+        path + "nx" + format,
+        path + "py" + format,
+        path + "ny" + format,
+        path + "pz" + format,
+        path + "nz" + format
+      ];
+
+      var textureCube = new THREE.CubeTextureLoader().load(urls);
+
+      scene = new THREE.Scene();
+      scene.background = textureCube;
+
+      renderer = new THREE.WebGLRenderer();
+      renderer.setPixelRatio(window.devicePixelRatio);
+      container.appendChild(renderer.domElement);
+
+      var width = container.innerWidth || 2;
+      var height = container.innerHeight || 2;
+
+      effect = new THREE.AnaglyphEffect(renderer);
+      effect.setSize(width, height);
+
+      window.addEventListener("resize", onWindowResize, false);
+    }
+
+    function onWindowResize() {
+      (windowHalfX = window.innerWidth / 2),
+        (windowHalfY = window.innerHeight / 2),
+        (camera.aspect = window.innerWidth / window.innerHeight);
+      camera.updateProjectionMatrix();
+
+      effect.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    function onDocumentMouseMove(event) {
+      mouseX = (event.clientX - windowHalfX) / 100;
+      mouseY = (event.clientY - windowHalfY) / 100;
+    }
+
+    //
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      render();
+    }
+
+    function render() {
+      var timer = 0.0001 * Date.now();
+
+      camera.position.x += (mouseX - camera.position.x) * 0.05;
+      camera.position.y += (-mouseY - camera.position.y) * 0.05;
+
+      camera.lookAt(scene.position);
+
+      for (var i = 0, il = spheres.length; i < il; i++) {
+        var sphere = spheres[i];
+
+        sphere.position.x = 5 * Math.cos(timer + i);
+        sphere.position.y = 5 * Math.sin(timer + i * 1.1);
+      }
+
+      effect.render(scene, camera);
+    }
+  },
+  toggleCollapse: function(e) {
+    e.preventDefault();
+    var collapse = document.getElementById("is-collapse-column");
+    if (!collapse) {
+      return;
+    }
+    if (e.target.innerHTML === "See All") {
+      e.target.innerHTML = "Hide Some!";
+    } else {
+      e.target.innerHTML = "See All";
+    }
+    collapse.classList.toggle("is-collapse-column");
   }
-  // loader: function() {
-  //   var load = document.getElementById("doc-loader");
-  //   console.log(load);
-  // }
-  //   apiController: function(){
-  //    var output = '';
-  //    var _grid = document.querySelector('.grid');
-  //    //show loader
-  //     fetch ('https://api.github.com/users/hitunes/repos').then(function(blob){
-  //       return blob.json()
-  //     }).then(function(responses){
-  //       //hide loader
-  //       // console.log(res);
-  //       if (responses){
-  //         responses.forEach(function(response){
-  //           // console.log(responses.name);
-  //           output += `	<div class="col-4 col-x-12">
-  //           <div class="card">
-  //             <div class="card__body">
-  //               <div class="card__overlay">
-  //                 <div class="card__overlay-details">
-  //                   <div class="card__icons">&sect;</div>
-  //                   <a href=${response.url} class="card__links" target="_blank">Visit Project</a>
-  //                 </div>
-  //               </div>
-  //               <img src="assets/img/card.png" alt="placeholder">
-  //             </div>
-  //             <div class="card__footer">
-  //               <h6>${response.name}</h6>
-  //             </div>
-  //           </div>
-  //         </div>`;
-  //       });
-  //       }
-  //     },
-  //     function(err){
-  //       if (err){
-  //         output += "<h1> NO response from Github API </h1>"
-  //       }
-  //       console.log(err)
-  //     });
-  //     _grid.innerHTML = output;
-  //   }
 };
