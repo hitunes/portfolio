@@ -673,6 +673,13 @@ justify-content: center;
     margin-bottom: 30px;
 }
 
+.card__project-title {
+    font-size: 32px;
+    color: #f39554;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
 .card__body {
     height: 200px;
     position: relative;
