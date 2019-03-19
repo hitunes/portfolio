@@ -11987,52 +11987,6 @@ footer .title {
     }
 }
 
-footer .social-icons {
-    margin: 0 auto 3rem
-}
-
-@media screen and (min-width: 769px) {
-    footer .social-icons {
-        margin: 0 auto 3.5rem
-    }
-}
-
-footer .social-icons a.button {
-    background-color: transparent;
-    color: #1d2021;
-    border-radius: 100%;
-    margin: 0 .2rem;
-    height: 47px;
-    width: 47px;
-    border: 2px solid rgba(255, 255, 255, 0.3)
-}
-
-@media screen and (min-width: 769px) {
-    footer .social-icons a.button {
-        margin: 0 0.8rem
-    }
-}
-
-footer .social-icons a.button.is-medium {
-    font-size: 1.05rem
-}
-
-@media screen and (min-width: 769px) {
-    footer .social-icons a.button.is-medium {
-        font-size: 1.18rem
-    }
-}
-
-footer .social-icons a.button .icon.is-small {
-    height: 1.4em;
-    width: 1.4em
-}
-
-footer .social-icons a.button:hover {
-    background: #fff;
-    color: #cee6ea;
-    border: 2px solid #fff
-}
 
 footer .copyright {
     opacity: 0.7
@@ -12042,11 +11996,6 @@ footer .copyright .icon {
     color: #e43629;
     -webkit-animation: heartBeat 2s infinite;
     animation: heartBeat 2s infinite;
-}
-
-footer .made-by-bulma {
-    opacity: 0.6;
-    margin-top: 0.7rem
 }
 
 ::-webkit-scrollbar {
