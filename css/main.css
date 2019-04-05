@@ -7420,6 +7420,9 @@ a.navbar-item.is-active,
         display: none
     }
     .navbar-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: #fff;
         box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
         padding: 0.5rem 0
@@ -12428,6 +12431,37 @@ input[name="carousel"] {
         -webkit-transform: scale(1.3);
         transform: scale(1.3);
     }
+}
+.nightmode{
+    background:#293347;
+}
+.nightmode .navbar{
+    background:#293347;
+}
+.nightmode .navbar-item img{
+        filter: invert(100%);
+}
+.nightmode .navbar-menu, .nightmode .hero.is-white{
+    background-color: #293347;
+    color: #e4e4e4;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(255,255,255, 0.2);
+    box-shadow:unset;
+}
+.nightmode .button.is-primary, .nightmode .hero.is-white .title, .nightmode .hero.is-white .subtitle{
+    color: #e4e4e4;
+}
+.nightmode .subtitle, .nightmode .quote{
+    color:#e4e4e4;
+}
+.unset-color{
+    color:unset!important
+}
+
+@media screen and (min-width: 769px) {
+   .adjust-icon{
+display:none;
+}
 }
 
 
